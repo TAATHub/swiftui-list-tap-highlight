@@ -34,7 +34,7 @@ struct ListItemView: View {
     
     var body: some View {
         Button {
-            // 何もしない
+            
         } label: {
             HStack {
                 Text(title)
@@ -43,6 +43,7 @@ struct ListItemView: View {
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        // ButtonStyleでタップ中のスタイルを指定
         .buttonStyle(ListItemButtonStyle())
     }
 }
